@@ -30,6 +30,6 @@ server.on("error", (err: Error) => {
   process.exit(-1);
 });
 
-server.listen(port, () => {
+server.listen(port, "localhost", () => {
   console.log(`server is listening on ${port}`);
 })
